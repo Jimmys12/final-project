@@ -50,11 +50,14 @@ h1{
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 5px;
 }
 /* Text Editing and Images */
 .logo img{
     height: 100px;
+}
+#location1{
+    width: 598px;
 }
 #slide{
     width: 600px;
@@ -67,6 +70,10 @@ h2{
 }
 #porch{
     margin-top: 0;
+}
+#nails{
+    margin-top: 0;
+    margin: 0px 0px 20px;
 }
 #first-p{
     font-size: x-large;
@@ -84,6 +91,10 @@ h2{
     height: 250px;
     padding-right: 10px;
     padding-bottom: 10px;
+}
+#menu{
+    width: 585px;
+    padding: 10px 10px 5px;
 }
 /* Footer */
 .footer{
@@ -132,31 +143,44 @@ h2{
 .footer .row a i{
     margin:0% 3%;
 }
-/* Slideshow */
-.fling-minislide{
-    width:600px; 
-    height:600px; 
-    overflow:hidden; 
-    position:relative;
+.thumbnail-container img{
+    width: 100%;
 }
-.fling-minislide img{ 
-    position:absolute; 
-    animation:fling-minislide 20s infinite; 
-    opacity:0; 
-    width: 600px; 
-    height: 600px;
+.thumbnail-container p{
+    visibility: hidden;
+}
+.thumbnail-container:hover p{
+    visibility: visible;
+}
+.thumbnail-container{
+    width: 140px;
+    margin: 5px;
+    background-color: orange;
+    opacity: 0.8;
+    float: left;
+}
+#confirmation-words{
+    font-size: 40px;
+    color: blue;
+}
+#confirmation-h2{
+    color:tomato;
+}
+#course-section{
+    color: teal;
 }
 
-@keyframes fling-minislide{25%{opacity:1;} 40%{opacity:0;}}
-.fling-minislide img:nth-child(4){
-    animation-delay:0s;
+th{
+    border: 1px solid #000;
+    padding: 10px 0px;
+    width: 150px;
 }
-.fling-minislide img:nth-child(3){
-    animation-delay:5s;
+td{
+    border: 1px solid #000;
+    padding: 10px 0px;
+    width: 150px;
 }
-.fling-minislide img:nth-child(2){
-    animation-delay:10s;
-}
-.fling-minislide img:nth-child(1){
-    animation-delay:15s;
+table{
+    border-collapse: collapse;
+    text-align: center;
 }
